@@ -4,11 +4,11 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    'Builder-leader with 25+ years scaling security, AI, and FinTech platforms — from Fortune 100 scale to 0-to-1 products.',
+    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, and FinTech — from Fortune 100 scale to 0-to-1 build out.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
-    linkedin: 'https://www.linkedin.com/in/REPLACE_ME',
+    linkedin: 'https://www.linkedin.com/in/kim-mawla-098667',
     github: 'https://github.com/kimmawla',
     resume: '/KimMawla_Resume.pdf', // drop the PDF into /public
   },
@@ -21,15 +21,15 @@ export const impact = [
   },
   {
     title: 'AI-native SDLC',
-    body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 150+ engineers in the US, India, and Germany.',
+    body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 150+ engineers across US, Canada, UK, Finland, and India.',
   },
   {
     title: 'Agentic AI platform',
-    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, RAG, and an evaluation harness — alongside 0-to-1 products in supply chain, container, and AI security.',
+    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, evaluation harness, and a security knowledge graph running on petabyte data pipeline daily  — alongside 0-to-1 expansion in supply chain, container, IaC, secrets and AI security.',
   },
   {
     title: 'Growth',
-    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$35M.',
+    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M.',
   },
 ];
 
@@ -43,13 +43,13 @@ export const experience = [
 export const projects = [
   {
     slug: 'mcp-server',
-    name: 'MY-MCP-SERVER', // rename once published
-    summary: 'An MCP server built with FastMCP and Claude Code. Being published to the official MCP Registry.',
-    status: 'In progress',
+    name: 'vuln-triage-mcp',
+    summary: 'An MCP server that tells your AI agent which vulnerabilities to fix first, combining OSV.dev, EPSS, and CISA KEV into one explainable priority score.',
+    status: 'Published · v0.1.0',
     links: {
-      repo: 'https://github.com/kimmawla/REPLACE_ME',
-      registry: 'https://registry.modelcontextprotocol.io/',
-      pypi: 'https://pypi.org/project/REPLACE_ME/',
+      repo: 'https://github.com/kimmawla/vuln-triage-mcp',
+      registry: 'https://registry.modelcontextprotocol.io/v0/servers?search=io.github.kimmawla%2Fvuln-triage-mcp',
+      pypi: 'https://pypi.org/project/vuln-triage-mcp/',
     },
   },
 ];

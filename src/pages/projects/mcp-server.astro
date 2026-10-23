@@ -11,18 +11,79 @@ const p = projects.find((x) => x.slug === 'mcp-server')!;
 
   <section>
     <h2>What it does</h2>
-    <p>Describe the problem, who it's for, and the tools it exposes.</p>
+    <p>CVSS ranks vulnerabilities by severity, not by how likely they are to be exploited. This server adds exploit probability (FIRST EPSS) and known exploitation (CISA KEV) to CVSS severity, and shows its reasoning. It exposes five tools:</p>
+    <ul>
+      <li><code>triage_vulnerability</code>: prioritize one CVE or GHSA advisory with a 0-100 score, bucket, confidence, and reasoning</li>
+      <li><code>lookup_vulnerability</code>: raw advisory details from OSV.dev</li>
+      <li><code>find_vulns_for_package</code>: known vulnerabilities affecting a package, or one version of it</li>
+      <li><code>get_epss_score</code>: exploit probability for one CVE</li>
+      <li><code>check_known_exploited</code>: whether a CVE is in CISA's KEV catalog</li>
+    </ul>
   </section>
 
   <section>
     <h2>Install</h2>
     <pre><code>uvx {p.name}</code></pre>
     <p class="muted">Or add to your MCP client config — see the repo README.</p>
+    <p>Then ask your agent, for example: “Which is most urgent: CVE-2021-44228, CVE-2023-4863, CVE-2019-10744?”</p>
+  </section>
+
+  <section>
+    <h2>Demo</h2>
+    <p class="muted">Run 2026-10-22.</p>
+    <pre><code>[10/22/26 13:57:24] INFO     Starting MCP server 'vuln-triage' with transport 'stdio'                                                                         transport.py:241
+INFO httpx: HTTP Request: GET https://api.first.org/data/v1/epss?cve=CVE-2021-44228 "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://api.osv.dev/v1/vulns/CVE-2021-44228 "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://api.first.org/data/v1/epss?cve=CVE-2023-4863 "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://api.osv.dev/v1/vulns/CVE-2023-4863 "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://api.first.org/data/v1/epss?cve=CVE-2019-10744 "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: GET https://api.osv.dev/v1/vulns/CVE-2019-10744 "HTTP/1.1 200 OK"
+vuln-triage-mcp demo, 2026-10-22
+
+CVE-2021-44228
+  CVSS:          10.0 (v3.1)
+  EPSS:          0.99999 (percentile 100.00)
+  KEV:           listed
+  Score:         100/100
+  Bucket:        critical
+  Confidence:    full
+  Reasoning:     CVSS 3.1 base score 10.0 contributes 40 points. EPSS probability 1.000
+                 contributes 35 points. Listed in CISA KEV (known exploited) adds 25
+                 points. Confidence full: all 3 signals available.
+
+CVE-2023-4863
+  CVSS:          8.8 (v3.1)
+  EPSS:          0.99979 (percentile 99.98)
+  KEV:           listed
+  Score:         95/100
+  Bucket:        critical
+  Confidence:    full
+  Reasoning:     CVSS 3.1 base score 8.8 contributes 35.2 points. EPSS probability 1.000
+                 contributes 35 points. Listed in CISA KEV (known exploited) adds 25
+                 points. Confidence full: all 3 signals available.
+
+CVE-2019-10744
+  CVSS:          9.1 (v3.1)
+  EPSS:          0.05006 (percentile 92.21)
+  KEV:           not_listed
+  Score:         38/100
+  Bucket:        low
+  Confidence:    full
+  Reasoning:     CVSS 3.1 base score 9.1 contributes 36.4 points. EPSS probability 0.050
+                 contributes 1.8 points. Not listed in CISA KEV. Confidence full: all 3
+                 signals available.</code></pre>
   </section>
 
   <section>
     <h2>How I built it</h2>
-    <p>FastMCP + Claude Code. Note design decisions, security posture (auth, tool scoping, input validation), and evals.</p>
+    <p>FastMCP + Claude Code. Each vulnerability gets one priority score from 0 to 100:</p>
+    <pre><code>Priority score (0-100) = CVSS base score x 4 (up to 40 points)
+                       + EPSS probability x 35 (up to 35 points)
+                       + 25 points if the CVE is in CISA's KEV catalog</code></pre>
+    <p>A KEV listing floors the score at 80, so known-exploited vulnerabilities are always critical. Buckets: critical (80+), high (60-79), medium (40-59), low (under 40), and unknown. Unknown means there isn't enough data to classify. It is not a low-risk verdict.</p>
+    <p>Missing signals are named in the result and lower the confidence. They are never counted as zero. Only CVSS base metrics are used, because EPSS and KEV already cover exploit likelihood.</p>
+    <p>Evaluation: a golden set of 17 hand-labeled entries (16 CVEs and 1 GHSA advisory) with expected priority buckets, plus an ordering check (Log4Shell above libwebp, both above lodash), using recorded fixtures (recorded 2026-10-21). Result: 17/17 matches, and the ordering check passes. This measures agreement with my own labels, not detection accuracy.</p>
   </section>
 
   <section>

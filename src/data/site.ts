@@ -21,7 +21,7 @@ export const impact = [
   },
   {
     title: 'AI-native SDLC',
-    body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 150+ engineers across US, Canada, UK, Finland, and India.',
+    body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 200+ engineers across US, Canada, UK, Finland, and India.',
   },
   {
     title: 'Agentic AI platform',

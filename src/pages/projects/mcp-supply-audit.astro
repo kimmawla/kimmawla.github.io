@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import { projects } from '../../data/site';
+const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
+---
+<Base title={`${p.name} — MCP server`} description={p.summary}>
+  <p><a href="/#building">← Back</a></p>
+  <span class="pill">{p.status}</span>
+  <h1 style="margin-top:12px">{p.name}</h1>
+  <p class="muted">{p.summary}</p>
+
+  <section>
+    <h2>What it does</h2>
+    <p>It audits MCP servers as software artifacts: registry listings, packages, configs, and tool definitions. It exposes six tools:</p>
+    <ul>
+      <!-- TODO: list the six tools (name + one line each) -->
+      <li>TODO: six tool names and descriptions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Install</h2>
+    <pre><code>uvx mcp-supply-audit</code></pre>
+    <p>Or pin the version:</p>
+    <pre><code>uvx mcp-supply-audit@0.1.0</code></pre>
+    <p class="muted">Or add to your MCP client config — see the repo README.</p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ul>
+      <li><strong>Never executes a target.</strong> All checks are static. It reads listings, packages, configs, and tool definitions but never runs the server it is auditing.</li>
+      <li><strong>Treats input as hostile.</strong> Hidden characters in what it reads are shown as visible escapes, not passed through.</li>
+      <li><strong>Deterministic rules.</strong> Detection is rule-based. No LLM is involved in detection.</li>
+      <li><strong>Four allowed hosts only.</strong> Network access is limited to four allowed hosts.</li>
+      <li><strong>Indicators, not verdicts.</strong> Results are indicators to review, not a safe/unsafe verdict, and any skipped checks are always listed.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Demo</h2>
+    <!-- TODO: replace the date and output below with the pasted demo run -->
+    <p class="muted">Run TODO-DATE.</p>
+    <pre><code>TODO: paste demo output</code></pre>
+  </section>
+
+  <section>
+    <h2>Known limits</h2>
+    <ul>
+      <li>Static analysis only.</li>
+      <li>No check of PyPI install scripts.</li>
+      <li>The reference list is dated.</li>
+      <li>Large PyPI projects need a version specified.</li>
+      <li>The OWASP MCP Top 10 mapping is against a beta.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Evaluation</h2>
+    <p>Benchmark in progress.</p>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <ul>
+      <li><a href={p.links.repo}>Source on GitHub</a></li>
+      <li><a href={p.links.pypi}>PyPI package</a></li>
+      <li><a href={p.links.registry}>Official MCP Registry entry (JSON)</a></li>
+    </ul>
+  </section>
+</Base>
+
+<style>
+  pre { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px; overflow-x: auto; }
+</style>

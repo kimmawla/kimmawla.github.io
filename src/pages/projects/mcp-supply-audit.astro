@@ -22,7 +22,7 @@ const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
     <h2>Install</h2>
     <pre><code>uvx mcp-supply-audit</code></pre>
     <p>Or pin the version:</p>
-    <pre><code>uvx mcp-supply-audit@0.1.0</code></pre>
+    <pre><code>uvx mcp-supply-audit@0.1.1</code></pre>
     <p class="muted">Or add to your MCP client config — see the repo README.</p>
   </section>
 
@@ -57,7 +57,13 @@ const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
 
   <section>
     <h2>Evaluation</h2>
-    <p>Benchmark in progress.</p>
+    <p>Measured 2026-11-09 on the tool-definition rules (TD001–TD008), against 19 positive fixtures and a benign corpus of 9 servers with 77 tools.</p>
+    <ul>
+      <li><strong>Detection:</strong> at least one expected rule fired on 12/19 positives at baseline and 19/19 after tuning. Exact matches went from 6/19 to 15/15 on the in-scope positives (15/19 over every counted pattern), with no extra rules fired.</li>
+      <li><strong>Benign:</strong> 0 findings on the 9 servers and 77 tools.</li>
+      <li><strong>Caveat:</strong> the post-tuning numbers are in-sample, measured on the same fixtures used for tuning. The baseline is the out-of-sample reference, and a held-out evaluation is still pending.</li>
+    </ul>
+    <p><a href={`${p.links.repo}#evaluation`}>Full evaluation, known evasions and limits in the README</a></p>
   </section>
 
   <section>

@@ -56,7 +56,7 @@ export const projects = [
     slug: 'mcp-supply-audit',
     name: 'mcp-supply-audit',
     summary: 'An MCP server that audits other MCP servers as software artifacts: registry listings, packages, configs, and tool definitions. Static checks only.',
-    status: 'Published · v0.1.0',
+    status: 'Published · v0.1.1',
     links: {
       repo: 'https://github.com/kimmawla/mcp-supply-audit',
       registry: 'https://registry.modelcontextprotocol.io/v0/servers?search=io.github.kimmawla%2Fmcp-supply-audit',

@@ -2,6 +2,60 @@
 import Base from '../../layouts/Base.astro';
 import { projects } from '../../data/site';
 const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
+
+// Output of the 0.1.1 demo run, rendered as text so braces and angle brackets stay literal.
+const demoOutput = `Date: 2026-11-11
+Target: io.github.kimmawla/vuln-triage-mcp
+
+Audited versions:
+  pypi vuln-triage-mcp 0.1.0  (audit_package:packages[0])
+
+Severity counts: critical 0, high 0, medium 0, low 0, info 1
+Assessment: findings_present
+
+Findings (1):
+  [info] PK004: No provenance attestation for this version
+      at audit_package:packages[0]/PyPI /integrity provenance, 2 of 2 files checked@0
+
+Checks that ran (16):
+  audit_registry_entry/RG002
+  audit_registry_entry/RG006
+  audit_registry_entry/RG001:packages[0]
+  audit_registry_entry/RG003:packages[0]
+  audit_registry_entry/RG004:packages[0]
+  audit_registry_entry/RG005:packages[0]
+  check_typosquat:packages[0]/TS001
+  check_typosquat:packages[0]/TS002
+  check_typosquat:packages[0]/TS003
+  check_typosquat:packages[0]/TS004
+  check_typosquat:packages[0]/TS005
+  audit_package:packages[0]/PK001
+  audit_package:packages[0]/PK002
+  audit_package:packages[0]/PK004
+  audit_package:packages[0]/PK005
+  audit_package:packages[0]/PK006
+
+Skipped checks (13):
+  audit_registry_entry/RG007: not_determinable
+  audit_registry_entry/RG008: not_applicable
+  audit_registry_entry/RG009: not_applicable
+  audit_registry_entry/RG010: not_applicable
+  audit_registry_entry/RG011: not_applicable
+  check_typosquat:name/TS001: not_applicable (name is a reference entry)
+  check_typosquat:name/TS002: not_applicable (name is a reference entry)
+  check_typosquat:name/TS003: not_applicable (name is a reference entry)
+  check_typosquat:name/TS004: not_applicable (name is a reference entry)
+  check_typosquat:name/TS005: not_applicable (name is a reference entry)
+  check_typosquat:name/TS006: not_applicable (name is a reference entry)
+  check_typosquat:packages[0]/TS006: not_applicable (name has no scope or namespace)
+  audit_package:packages[0]/PK003: not_determinable (PyPI install-time code needs file download)
+
+Notes:
+  - The name is itself an entry in the reference names, so the similarity rules do not apply to it.
+  - Absence of findings is not proof of safety. Only static checks were run; see coverage for which checks ran and which were skipped.
+
+Data sources:
+  data/reference_names.json: as of 2026-11-03, 55988 entries`;
 ---
 <Base title={`${p.name} — MCP server`} description={p.summary}>
   <p><a href="/#building">← Back</a></p>
@@ -13,8 +67,12 @@ const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
     <h2>What it does</h2>
     <p>It audits MCP servers as software artifacts: registry listings, packages, configs, and tool definitions. It exposes six tools:</p>
     <ul>
-      <!-- TODO: list the six tools (name + one line each) -->
-      <li>TODO: six tool names and descriptions</li>
+      <li><code>scan_tool_definitions</code>: scans a server’s pasted <code>tools/list</code> JSON for hidden characters, instruction-like phrasing, references to other tools, exfiltration-like wording, encoded blobs, padding, parameters that invite dumping context, and duplicate or look-alike tool names.</li>
+      <li><code>audit_registry_entry</code>: checks an MCP Registry listing for consistency, status and ownership markers.</li>
+      <li><code>check_typosquat</code>: compares a server or package name against known names for look-alikes.</li>
+      <li><code>audit_package</code>: audits a specific PyPI or npm package and version, including known vulnerabilities and package-level red flags.</li>
+      <li><code>scan_mcp_config</code>: reviews a pasted client config for risky settings. It takes pasted text only, never a file path, and no config value appears in the report.</li>
+      <li><code>audit_server</code>: the full check for one server, combining the others.</li>
     </ul>
   </section>
 
@@ -39,9 +97,8 @@ const p = projects.find((x) => x.slug === 'mcp-supply-audit')!;
 
   <section>
     <h2>Demo</h2>
-    <!-- TODO: replace the date and output below with the pasted demo run -->
-    <p class="muted">Run TODO-DATE.</p>
-    <pre><code>TODO: paste demo output</code></pre>
+    <p class="muted">Run 2026-11-11.</p>
+    <pre><code>{demoOutput}</code></pre>
   </section>
 
   <section>

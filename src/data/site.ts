@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, and FinTech — from Fortune 100 scale to 0-to-1 build out.',
+    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale, from greenfield market expansion to ecosystem platformization.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -16,26 +16,30 @@ export const profile = {
 
 export const impact = [
   {
-    title: 'Unified AppSec platform',
-    body: 'Led global engineering for a $500M+ AppSec portfolio (Coverity SAST, Black Duck SCA, Polaris ASPM) and unified four products into the Polaris SaaS platform.',
+    title: 'Unified AppSec-CloudSec',
+    body: 'Led global engineering for a $500M+ AppSec portfolio (Coverity SAST, Black Duck SCA, Polaris ASPM) and unified six products into the Polaris SaaS platform.',
   },
   {
     title: 'AI-native SDLC',
     body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 200+ engineers across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI platform',
+    title: 'Agentic AI Platform',
     body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, evaluation harness, and a security knowledge graph running on petabyte data pipeline daily  — alongside 0-to-1 expansion in supply chain, container, IaC, secrets and AI security.',
   },
   {
-    title: 'Growth',
+    title: 'Rapid Growth',
     body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M.',
+  },
+  {
+    title: 'Engineering Transformation',
+    body: 'Grew siloed engineering across US/EU/Asia at Black Duck to DORA elite operating rigor - multi deployments/day, <5% change failure rate, 99.95% SLO.',
   },
 ];
 
 export const experience = [
-  { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '2020–2025' },
-  { org: 'Info Image', role: 'CTO', years: '' },
+  { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '6 Years' },
+  { org: 'Info Image', role: 'CTO', years: '6 Years' },
   { org: 'Citrix', role: 'Senior Director, Cloud Platforms', years: '' },
   { org: 'PNC Financial Services', role: 'VP, Software Engineering', years: '' },
 ];

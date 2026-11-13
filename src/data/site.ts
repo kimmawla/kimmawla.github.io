@@ -33,13 +33,13 @@ export const impact = [
   },
   {
     title: 'Engineering Transformation',
-    body: 'Grew siloed engineering across US/EU/Asia at Black Duck to DORA elite operating rigor - multi deployments/day, <5% change failure rate, 99.95% SLO.',
+    body: 'Grew siloed engineering across US/EU/Asia at Black Duck to DORA elite operating rigor - multi deployments/day, <5% change failure rate, <2% defect escape rate, 99.95% SLO.',
   },
 ];
 
 export const experience = [
-  { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '6 Years' },
-  { org: 'Info Image', role: 'CTO', years: '6 Years' },
+  { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '' },
+  { org: 'Info Image', role: 'CTO', years: '' },
   { org: 'Citrix', role: 'Senior Director, Cloud Platforms', years: '' },
   { org: 'PNC Financial Services', role: 'VP, Software Engineering', years: '' },
 ];

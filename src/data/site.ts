@@ -17,15 +17,15 @@ export const profile = {
 export const impact = [
   {
     title: 'Unified AppSec Platform',
-    body: 'Led global engineering for a $500M+ Application Security portfolio (including Coverity and Black Duck) - unified six products into Polaris SaaS ASPM platform alongside product expansion in SW supply chain, cloud and AI security.',
+    body: 'Led global engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS ASPM platform, enabling a developer security pivot through product expansion in cloud and AI security.',
   },
   {
     title: 'AI-native SDLC',
     body: 'Cut feature lead time 50% through an AI-native delivery tranformation, reaching DORA elite operating rigor across 200+ engineers across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI Disruption',
-    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, eval harness, and a security knowledge graph running on petabyte data pipeline daily.',
+    title: 'Agentic AI',
+    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, eval harness, and Context AI - a security knowledge graph running on petabyte data pipeline daily.',
   },
   {
     title: 'Rapid Growth',
@@ -33,7 +33,11 @@ export const impact = [
   },
   {
     title: 'Engineering Transformation',
-    body: ' From siloed engineering across US/EU/Asia to high-ownership autonomous culture driving multi deployments/day with <2% defect escape rate and 99.95% SLO.',
+    body: ' From siloed engineering across US/EU/Asia to autonomous pods owning multi deployments/day with <2% defect escape rate and 99.99% SLO.',
+  },
+  {
+    title: 'Hyper Scale',
+    body: ' Serving half of Fortune 100 and million developer ecosystem with 1 billion+ API requests, petabyte data pipeline and billions of events processed daily. .',
   },
 ];
 

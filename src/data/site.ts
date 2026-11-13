@@ -17,7 +17,7 @@ export const profile = {
 export const impact = [
   {
     title: 'Unified AppSec Platform',
-    body: 'Led global engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS ASPM platform, enabled developer security product pivot via cloud and AI security expansions.',
+    body: 'Led engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS ASPM platform, enabled DevSecOps product pivot via cloud and AI security expansions.',
   },
   {
     title: 'AI-native SDLC',

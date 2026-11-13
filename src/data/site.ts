@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale, from greenfield market expansion to ecosystem platformization.',
+    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale; greenfield expansion to platformization.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -16,24 +16,24 @@ export const profile = {
 
 export const impact = [
   {
-    title: 'Unified AppSec-CloudSec',
-    body: 'Led global engineering for a $500M+ AppSec portfolio (Coverity SAST, Black Duck SCA, Polaris ASPM) and unified six products into the Polaris SaaS platform.',
+    title: 'Unified AppSec Platform',
+    body: 'Led global engineering for a $500M+ Application Security portfolio (including Coverity and Black Duck) - unified six products into Polaris SaaS ASPM platform alongside new product releases in SW supply chain, container, cloud and AI security.',
   },
   {
     title: 'AI-native SDLC',
-    body: 'Cut feature lead time 50% through an AI-native software delivery lifecycle, reaching DORA elite delivery across 200+ engineers across US, Canada, UK, Finland, and India.',
+    body: 'Cut feature lead time 50% through an AI-native delivery tranformation, reaching DORA elite operating rigor across 200+ engineers across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI Platform',
-    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, evaluation harness, and a security knowledge graph running on petabyte data pipeline daily  — alongside 0-to-1 expansion in supply chain, container, IaC, secrets and AI security.',
+    title: 'Agentic AI Disruption',
+    body: 'Built Signal AI — agentic AppSec with multi-model inferencing, hybrid RAG, eval harness, and a security knowledge graph running on petabyte data pipeline daily.',
   },
   {
     title: 'Rapid Growth',
-    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M.',
+    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M; 0-40 engineering hyper growth in 15 months at Citrix.',
   },
   {
     title: 'Engineering Transformation',
-    body: 'Grew siloed engineering across US/EU/Asia at Black Duck to DORA elite operating rigor - multi deployments/day, <5% change failure rate, <2% defect escape rate, 99.95% SLO.',
+    body: ' From siloed engineering across US/EU/Asia to high-ownership autonomous culture driving multi deployments/day with <2% defect escape rate and 99.95% SLO.',
   },
 ];
 

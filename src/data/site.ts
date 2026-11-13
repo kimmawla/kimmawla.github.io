@@ -33,11 +33,11 @@ export const impact = [
   },
   {
     title: 'Engineering Transformation',
-    body: ' From engineering siloes across US/EU/Asia to cross-functional autonomous pods owning multi deployments/day with <2% defect escape rate and 99.99% SLO.',
+    body: ' From R&D siloes across US/EU/Asia to cross-functional autonomous pods owning multi deployments/day with <2% defect escape rate and 99.99% SLO.',
   },
   {
     title: 'Hyper Scale',
-    body: ' Serving half of Fortune 100 and million-developer ecosystem with 1 billion+ API requests, petabyte data pipeline and billions of events processed daily. .',
+    body: ' Serving half of Fortune 100 and million-developer ecosystem with petabyte data pipelines and billions of events processed daily. .',
   },
 ];
 

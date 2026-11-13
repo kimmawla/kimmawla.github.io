@@ -17,14 +17,14 @@ export const profile = {
 export const impact = [
   {
     title: 'Unified AppSec Platform',
-    body: 'Led global engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS ASPM platform, enabled developer security product pivot through expansion into cloud and AI security.',
+    body: 'Led global engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS ASPM platform, enabled developer security product pivot via organic expansion into cloud and AI security.',
   },
   {
     title: 'AI-native SDLC',
     body: 'Cut feature lead time 50% through an AI-native delivery tranformation, reaching DORA elite operating rigor in engineeing org distributed across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI',
+    title: 'Agentic AI Augmentation',
     body: 'Built Signal AI — agentic AppSec product with multi-model inferencing, hybrid RAG, eval harness, and Context AI - a security knowledge graph running on petabyte data pipeline daily.',
   },
   {

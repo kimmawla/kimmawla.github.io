@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale; greenfield expansion to platformization.',
+    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale; greenfield innovation to platformization.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -17,7 +17,7 @@ export const profile = {
 export const impact = [
   {
     title: 'Unified AppSec Platform',
-    body: 'Led global engineering for a $500M+ Application Security portfolio (including Coverity and Black Duck) - unified six products into Polaris SaaS ASPM platform alongside new product releases in SW supply chain, container, cloud and AI security.',
+    body: 'Led global engineering for a $500M+ Application Security portfolio (including Coverity and Black Duck) - unified six products into Polaris SaaS ASPM platform alongside product expansion in SW supply chain, cloud and AI security.',
   },
   {
     title: 'AI-native SDLC',

@@ -43,10 +43,12 @@ export const impact = [
 
 export const experience = [
   { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '' },
-   { org: 'Synopsys (Software Integrity BU)', role: 'Executive Director, R&D', years: '' },
+   { org: 'Synopsys (Software Security BU)', role: 'Executive Director, R&D', years: '' },
   { org: 'Info Image', role: 'CTO', years: '' },
   { org: 'Citrix', role: 'Senior Director, Cloud Platforms', years: '' },
   { org: 'PNC Financial Services', role: 'VP, Software Engineering', years: '' },
+  { org: 'Riverton', role: 'Architect', years: '' },
+  { org: 'Razorfish', role: 'Principal Engineer', years: '' },
 ];
 
 export const projects = [

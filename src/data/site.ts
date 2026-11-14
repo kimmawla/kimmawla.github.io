@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS — from 0-to-1 build out to Fortune 100 scale; greenfield innovation to platformization.',
+    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS. From 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization, from builder to leader.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -33,7 +33,7 @@ export const impact = [
   },
   {
     title: 'Engineering Transformation',
-    body: ' From R&D siloes across US/EU/Asia to cross-functional autonomous pods owning multi deployments/day and 99.99% SLO.',
+    body: ' From R&D siloes across US/EU/Asia to autonomous cross-functional pods driving multi deployments/day while owning 99.99% SLO.',
   },
   {
     title: 'Hyper Scale',
@@ -43,6 +43,7 @@ export const impact = [
 
 export const experience = [
   { org: 'Black Duck Software (Synopsys spin-off)', role: 'Head of Engineering', years: '' },
+   { org: 'Synopsys (Software Integrity BU)', role: 'Executive Director, R&D', years: '' },
   { org: 'Info Image', role: 'CTO', years: '' },
   { org: 'Citrix', role: 'Senior Director, Cloud Platforms', years: '' },
   { org: 'PNC Financial Services', role: 'VP, Software Engineering', years: '' },

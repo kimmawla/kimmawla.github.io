@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Head of Engineering · AI, SaaS & Cybersecurity',
   tagline:
-    '20+ years leading elite enginering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
+    '20+ years leading elite engineering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -21,7 +21,7 @@ export const impact = [
   },
   {
     title: 'AI-native SDLC',
-    body: 'Cut feature lead time 50% through an AI-native delivery tranformation, sustaining DORA elite engineering rigor across US, Canada, UK, Finland, and India.',
+    body: 'Cut feature lead time 50% through an AI-native delivery transformation, sustaining DORA elite engineering rigor across US, Canada, UK, Finland, and India.',
   },
   {
     title: 'Agentic AI Augments',
@@ -37,7 +37,7 @@ export const impact = [
   },
   {
     title: 'Hyper Scale',
-    body: ' Serving half of Fortune 100 and million-developer ecosystem with petabyte data pipelines and billions of events processed daily. .',
+    body: ' Serving half of Fortune 100 and million-developer ecosystem with petabyte data pipelines and billions of events processed daily.',
   },
 ];
 

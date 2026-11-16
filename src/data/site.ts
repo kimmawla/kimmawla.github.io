@@ -47,8 +47,9 @@ export const experience = [
   { org: 'Info Image', role: 'CTO', years: '' },
   { org: 'Citrix', role: 'Senior Director, Cloud Platforms', years: '' },
   { org: 'PNC Financial Services', role: 'VP, Software Engineering', years: '' },
-  { org: 'Riverton', role: 'Architect', years: '' },
-  { org: 'Razorfish', role: 'Principal Engineer', years: '' },
+  { org: 'Riverton Software', role: 'Architect', years: '' },
+  { org: 'Razorfish', role: 'Technical Lead, MTS', years: '' },
+  { org: 'i-Cube', role: 'Senior SW Engineer', years: '' },
 ];
 
 export const projects = [

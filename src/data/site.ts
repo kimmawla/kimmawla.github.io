@@ -2,7 +2,7 @@
 
 export const profile = {
   name: 'Kim Mawla',
-  title: 'Head of Engineering · AI, SaaS & Cybersecurity',
+  title: 'Head of Engineering · AI, SaaS, Cybersecurity & FinTech',
   tagline:
     '20+ years leading elite engineering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
   location: 'San Jose, CA',

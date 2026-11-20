@@ -24,7 +24,7 @@ export const impact = [
     body: 'Cut feature lead time 50% through an AI-native delivery transformation, sustaining DORA elite engineering rigor across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI Augments',
+    title: 'Agentic AI Pivot',
     body: 'Built Signal AI — agentic AppSec product with multi-model inferencing, hybrid RAG, eval harness, and Context AI - a security knowledge graph running on petabyte data pipeline daily.',
   },
   {

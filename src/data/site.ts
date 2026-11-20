@@ -56,7 +56,8 @@ export const projects = [
   {
     slug: 'mcp-server',
     name: 'vuln-triage-mcp',
-    summary: 'An MCP server that tells your AI agent which vulnerabilities to fix first, combining OSV.dev, EPSS, and CISA KEV into one explainable priority score.',
+    summary: 'Agent-driven vulnerability triage — ranks CVEs by real exploit risk, not raw severity.',
+    //summary: 'An MCP server that tells your AI agent which vulnerabilities to fix first, combining OSV.dev, EPSS, and CISA KEV into one explainable priority score.',
     status: 'Published · v0.1.0',
     links: {
       repo: 'https://github.com/kimmawla/vuln-triage-mcp',
@@ -67,7 +68,8 @@ export const projects = [
     {
     slug: 'mcp-supply-audit',
     name: 'mcp-supply-audit',
-    summary: 'An MCP server that audits other MCP servers as software artifacts: registry listings, packages, configs, and tool definitions. Static checks only.',
+    summary: 'Vets third-party MCP servers before agents get access to them.',
+    //summary: 'An MCP server that audits other MCP servers as software artifacts: registry listings, packages, configs, and tool definitions. Static checks only.',
     status: 'Published · v0.1.1',
     links: {
       repo: 'https://github.com/kimmawla/mcp-supply-audit',

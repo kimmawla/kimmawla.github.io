@@ -4,7 +4,7 @@ export const profile = {
   name: 'Kim Mawla',
   title: 'Engineering Executive · Agentic Security, FinTech & B2B SaaS',
   tagline:
-    '20+ years leading elite engineering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and enterprise SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
+    '20+ years leading elite engineering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and B2B SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
   location: 'San Jose, CA',
   email: 'kmawla@gmail.com', // swap for a public alias if you prefer
   links: {
@@ -16,20 +16,20 @@ export const profile = {
 
 export const impact = [
   {
-    title: 'Unified AppSec Platform',
-    body: 'Led engineering for $500M+ Application Security portfolio - unified six products into Polaris SaaS platform, enabled DevSec product pivot via cloud and AI security expansions.',
-  },
-  {
     title: 'AI-native SDLC',
     body: 'Cut feature lead time 50% through an AI-native delivery transformation, sustaining DORA elite engineering rigor across US, Canada, UK, Finland, and India.',
   },
   {
-    title: 'Agentic AI Pivot',
+    title: 'Agentic AI Product',
     body: 'Built Signal AI — agentic AppSec product with multi-model inferencing, hybrid RAG, eval harness, and Context AI - a security knowledge graph running on petabyte data pipeline daily.',
   },
   {
+    title: 'Unified AppSec Platform',
+    body: 'Led engineering for $300M+ ARR security product line - unified six products into Polaris SaaS ASPM platform, enabled DevSec product pivot via cloud and AI security expansions.',
+  },
+  {
     title: 'Rapid Growth',
-    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M; 0-40 engineering hyper growth in 15 months at Citrix.',
+    body: 'Sustained 25%+ YoY ARR growth at Black Duck; as CTO of Info Image, tripled ARR to ~$60M; 0-40 engineering hyper growth in 12 months at Citrix.',
   },
   {
     title: 'Engineering Transformation',

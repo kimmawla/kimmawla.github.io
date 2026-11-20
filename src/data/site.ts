@@ -2,7 +2,7 @@
 
 export const profile = {
   name: 'Kim Mawla',
-  title: 'Engineering Executive · Agentic Security, FinTech & B2B SaaS',
+  title: 'Engineering Leader · Agentic Security, FinTech & B2B SaaS',
   tagline:
     '20+ years leading elite engineering orgs, scaling mission critical platforms and shipping breakthrough products in security, AI, FinTech, and B2B SaaS. From builder to leader, from 0-to-1 build out to Fortune 100 scale, from greenfield innovation to platformization.',
   location: 'San Jose, CA',

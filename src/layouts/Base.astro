@@ -66,6 +66,8 @@ const { title = `${profile.name} — ${profile.title}`, description = profile.ta
   /* ▼ ADDED: first section has no top border + tighter top padding */
   section:first-of-type { padding-top: 8px; padding-bottom: 16px; }
 
+  section:first-of-type + section { padding-top: 24px; }
+
   /* ▼ CHANGED: nav padding 24 → 16px */
   .nav { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; gap: 12px; }
 
